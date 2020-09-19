@@ -11,7 +11,7 @@ header.main-header
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/header.jpg");
     background-size:cover;
     background-repeat:no-repeat;
-    background-position:center 55px;
+    background-position:center 50px;
     color:#fff;
     font-family:Arial, Helvetica, sans-serif;
     position: relative;
@@ -19,12 +19,12 @@ header.main-header
 
 header.main-header .top-header
 {
-    font-family:cursive;
+    font-family:Arial, Helvetica, sans-serif;
     display:flex;
     justify-content: space-between;
     padding:15px;
     overflow:hidden;
-    height:55px;
+    height:50px;
     background-color:#ac0303f1;
 }
 
@@ -36,6 +36,8 @@ header.main-header .top-header span
 header.main-header .top-header ul
 {
     transition:all .5s ease;
+    z-index: 100;
+
 }
 
 header.main-header .top-header ul li
@@ -74,6 +76,8 @@ header.main-header .bottom-header p:nth-child(1)
     font-size:5.5em;
     color:#c90303;
     margin-bottom:10px;
+    font-weight:bold;
+    position: relative;
 }
 
 header.main-header .bottom-header p:nth-child(2)
@@ -108,7 +112,7 @@ header.main-header .bottom-header a
     {
         right:-100%;
         position:fixed;
-        top:60px;
+        top:50px;
         width:100%;
     }
     label[for="nav"]
@@ -120,16 +124,23 @@ header.main-header .bottom-header a
     input[type="checkbox"]:checked ~ ul
     {
         right:0;
-
-        background-color:rgba(0, 0, 0, 0.774);
+        background-color:rgba(61, 61, 61, 0.95);
     }
     header.main-header .top-header ul li
     {
         display:block;
         width:100%;
         text-align:center;
-        margin:10px 0 10px 0;
+        margin:15px 0 15px 0;
+        border-bottom:1px solid #fff;
+        padding:5px;
+        padding-bottom:10px;
     }
+    header.main-header .top-header ul li:last-child
+    {
+        margin-bottom:0;
+    }
+
 }
 
 section.who
