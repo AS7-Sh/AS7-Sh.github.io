@@ -124,7 +124,7 @@ header.main-header .bottom-header a
     input[type="checkbox"]:checked ~ ul
     {
         right:0;
-        background-color:rgba(61, 61, 61, 0.95);
+        background-color:rgba(61, 61, 61, 1);
     }
     header.main-header .top-header ul li
     {
